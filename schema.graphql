@@ -1,0 +1,25 @@
+type Query {
+    hello: String
+    user: User
+    vehicle (vin: String!): Vehicle
+  }
+
+  type User {
+    id: ID!
+    username: String
+  }
+
+  type Vehicle {
+    year: Int!
+    make: String!
+    model: String!
+    trim: String!
+    dateOnLot: String
+    vin: String!
+    description: String
+    cost: Int!
+    msrp: Int
+    price: Int
+    isNew: Boolean!
+    stockNumber: String
+  }
